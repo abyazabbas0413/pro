@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Paper Consumption in the Digital Age — environmental impacts, alternatives, recycling and practical actions.">
+<meta name="theme-color" content="#0b3d32">
+<title>Paper Consumption in the Digital Age | Environmental Impacts & Alternatives</title>
+<style>
+:root{--ink:#092f28;--ink2:#0d4539;--green:#16805f;--green2:#34ad78;--mint:#e2f6ec;--lime:#c8ef72;--cream:#fbfaf5;--white:#fff;--muted:#60756f;--line:#dbe9e1;--gold:#f4c95d;--red:#d45c4c;--shadow:0 20px 60px rgba(9,47,40,.12);--r:24px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}body.menu-open{overflow:hidden}img{max-width:100%}button,input{font:inherit}a{color:inherit}.wrap{width:min(1180px,92%);margin:auto}
+/* NAV */
+.nav{position:sticky;top:0;z-index:100;background:rgba(251,250,245,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(219,233,225,.9)}.navin{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{text-decoration:none;font-weight:950;letter-spacing:-.04em;display:flex;align-items:center;gap:10px}.brandmark{width:38px;height:38px;border-radius:13px;background:var(--ink);display:grid;place-items:center;color:#fff;font-size:19px;box-shadow:0 8px 20px rgba(9,47,40,.18)}.links{display:flex;align-items:center;gap:24px;font-size:.9rem;font-weight:800;color:var(--muted)}.links a{text-decoration:none}.links a:hover{color:var(--green)}.menuBtn{display:none;border:0;background:var(--ink);color:#fff;border-radius:12px;padding:10px 13px;font-weight:900;cursor:pointer}.menuBtn:focus-visible,.btn:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+/* HERO */
+.hero{position:relative;overflow:hidden;padding:72px 0 52px;background:radial-gradient(circle at 82% 10%,#d8f3e5 0 12%,transparent 33%),linear-gradient(180deg,#fbfaf5 0,#f0f8f3 100%)}.hero:before{content:"";position:absolute;width:360px;height:360px;border-radius:50%;border:1px solid rgba(22,128,95,.13);right:-150px;bottom:-180px}.heroGrid{display:grid;grid-template-columns:1.04fr .96fr;gap:58px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border-radius:999px;background:var(--mint);color:var(--green);font-weight:950;font-size:.78rem;letter-spacing:.09em;text-transform:uppercase}.hero h1{font-size:clamp(3rem,6vw,6rem);line-height:.91;letter-spacing:-.075em;margin:20px 0 22px;max-width:760px}.hero h1 span{color:var(--green)}.hero p{font-size:1.08rem;color:var(--muted);max-width:680px}.hero p b{color:var(--ink)}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:14px;padding:13px 18px;text-decoration:none;font-weight:950;border:1px solid var(--ink);transition:.2s ease;cursor:pointer}.btn:hover{transform:translateY(-2px)}.primary{background:var(--ink);color:#fff}.secondary{background:#fff}.heroArt{min-height:500px;position:relative}.photoFrame{position:absolute;inset:15px 0 30px 35px;border-radius:34px;overflow:hidden;box-shadow:var(--shadow);background:linear-gradient(135deg,#dcefe5,#b7d9c8)}.photoFrame img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s ease}.photoFrame:hover img{transform:scale(1.035)}.photoShade{position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(5,35,29,.45))}.floating{position:absolute;left:-5px;bottom:0;width:min(250px,65%);background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:var(--shadow)}.floating strong{display:block;font-size:2.2rem;letter-spacing:-.06em}.floating small{display:block;color:var(--muted);line-height:1.35}
+/* COMMON */
+section{padding:88px 0}.sectionHead{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:32px}.kicker{font-size:.78rem;text-transform:uppercase;letter-spacing:.11em;color:var(--green);font-weight:950}.sectionHead h2{font-size:clamp(2rem,4vw,3.5rem);line-height:.98;letter-spacing:-.055em;margin:8px 0 0}.sectionHead>p{max-width:510px;color:var(--muted);margin:0}.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.show{opacity:1;transform:none}.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px;box-shadow:0 10px 35px rgba(9,47,40,.055)}
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.stat{min-height:160px;padding:24px;border:1px solid var(--line);border-radius:20px;background:#fff;box-shadow:0 10px 30px rgba(9,47,40,.05)}.stat:first-child{border-left:5px solid var(--green)}.stat strong{display:block;font-size:2.35rem;line-height:1;letter-spacing:-.06em;margin-bottom:9px}.stat span{color:var(--muted);font-size:.91rem}
+/* IMPACT */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:22px}.impact{display:grid;gap:4px}.impactItem{display:grid;grid-template-columns:48px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}.impactItem:last-child{border-bottom:0}.icon{width:44px;height:44px;border-radius:14px;background:var(--mint);display:grid;place-items:center;font-size:1.35rem}.impactItem b{display:block}.impactItem span{display:block;color:var(--muted);font-size:.92rem;margin-top:3px}.impactPhoto{width:100%;height:230px;border-radius:18px;object-fit:cover;display:block;background:#dcefe5}.callout{margin-top:18px;padding:18px;border-radius:18px;background:var(--ink);color:#fff}.callout b{color:var(--lime)}
+/* LIFECYCLE */
+.lifecycle{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.step{position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px}.step:not(:last-child):after{content:"→";position:absolute;right:-20px;top:38%;z-index:2;font-size:25px;font-weight:900;color:var(--green)}.num{width:35px;height:35px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:#fff;font-weight:950;margin-bottom:15px}.step h3{margin:0 0 6px}.step p{margin:0;color:var(--muted);font-size:.9rem}
+/* ALTERNATIVES */
+.altGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.alt{padding:0;overflow:hidden}.altImg{width:100%;height:205px;object-fit:cover;display:block;background:#dcefe5}.inner{padding:22px}.tag{display:inline-block;padding:5px 9px;border-radius:999px;background:var(--mint);color:var(--green);font-size:.74rem;font-weight:950}.inner h3{margin:11px 0 5px}.inner ul{margin:10px 0 0;padding-left:19px;color:var(--muted);font-size:.92rem}
+/* COMPARISON */
+.compare{overflow:auto;border:1px solid var(--line);border-radius:20px;background:#fff;box-shadow:0 10px 35px rgba(9,47,40,.05)}table{width:100%;min-width:720px;border-collapse:collapse}th,td{text-align:left;padding:16px;border-bottom:1px solid var(--line)}th{background:var(--ink);color:#fff;font-size:.86rem}tr:last-child td{border-bottom:0}.good{color:var(--green);font-weight:950}.warn{color:#9a6a00;font-weight:950}
+/* ACTION */
+.actionGrid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}.checklist{display:grid;gap:10px}.check{display:flex;align-items:flex-start;gap:12px;padding:14px;border:1px solid var(--line);border-radius:15px;background:#fff;cursor:pointer}.check:hover{border-color:#a9d3bf}.check input{width:20px;height:20px;margin-top:2px;accent-color:var(--green);flex:none}.check small{color:var(--muted)}.progress{height:12px;background:#e8efe9;border-radius:999px;overflow:hidden;margin:17px 0 10px}.bar{height:100%;width:0;background:linear-gradient(90deg,var(--green),var(--lime));transition:.35s}.score{font-size:2.7rem;font-weight:950;letter-spacing:-.06em}.calculator{background:linear-gradient(135deg,var(--ink),#145844);color:#fff}.calculator p,.calculator label{color:#c8ddd6}.formrow{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field label{display:block;font-size:.84rem;font-weight:900;margin-bottom:6px}.field input{width:100%;padding:12px 13px;border-radius:12px;border:1px solid #55786d;background:#0c382f;color:#fff}.result{margin-top:18px;padding:17px;border-radius:16px;background:rgba(255,255,255,.09)}.result strong{font-size:2rem;color:var(--lime)}
+/* QUIZ */
+.quizGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.quizCard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}.quizCard h3{font-size:1rem;margin:0 0 10px}.quizCard select{width:100%;padding:11px;border-radius:11px;border:1px solid var(--line);background:#fff;color:var(--ink)}.quizResult{margin-top:10px;font-weight:900;min-height:25px}.right{color:var(--green)}.wrong{color:var(--red)}
+/* SOURCES */
+.sources{background:#edf6f0}.sourceGrid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.sourceCard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}.sourceCard a{color:var(--green);font-weight:900;text-decoration:none}.sourceCard a:hover{text-decoration:underline}.note{font-size:.85rem;color:var(--muted)}
+/* FOOTER */
+.footer{padding:32px 0;background:var(--ink);color:#dceae4}.footerIn{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer small{color:#9eb8ae}.toTop{border:1px solid #55766c;border-radius:10px;padding:9px 12px;text-decoration:none}.toTop:hover{background:#123f35}
+/* BACK TO TOP */
+.topFloat{position:fixed;right:18px;bottom:18px;width:46px;height:46px;border:0;border-radius:50%;background:var(--ink);color:#fff;box-shadow:var(--shadow);cursor:pointer;z-index:80;opacity:0;pointer-events:none;transform:translateY(10px);transition:.25s}.topFloat.visible{opacity:1;pointer-events:auto;transform:none}
+/* MOBILE */
+@media(max-width:950px){.heroGrid,.split,.actionGrid{grid-template-columns:1fr}.heroArt{min-height:430px}.stats{grid-template-columns:repeat(2,1fr)}.lifecycle{grid-template-columns:repeat(2,1fr)}.step:not(:last-child):after{display:none}.altGrid{grid-template-columns:1fr 1fr}.quizGrid{grid-template-columns:1fr}.sourceGrid{grid-template-columns:1fr}}
+@media(max-width:720px){.navin{height:64px}.menuBtn{display:block}.links{display:none;position:fixed;left:0;right:0;top:64px;padding:18px 6%;background:rgba(251,250,245,.98);backdrop-filter:blur(18px);border-bottom:1px solid var(--line);box-shadow:0 20px 30px rgba(9,47,40,.08);flex-direction:column;align-items:flex-start;gap:0}.links.open{display:flex}.links a{width:100%;padding:13px 0;border-bottom:1px solid var(--line)}.hero{padding-top:45px}.heroGrid{gap:30px}.hero h1{font-size:clamp(2.8rem,15vw,4.5rem)}.heroArt{min-height:350px}.photoFrame{inset:0 0 20px 15px}.floating{left:0;bottom:0}.sectionHead{display:block}.sectionHead>p{margin-top:13px}.stats,.lifecycle,.altGrid{grid-template-columns:1fr}.formrow{grid-template-columns:1fr}section{padding:65px 0}.footerIn{display:block}.footer .toTop{display:inline-block;margin-top:15px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{transition:none}.photoFrame img,.btn,.topFloat{transition:none}}
+@media print{.nav,.actions,.menuBtn,.topFloat,.calculator,.checklist,.progress{display:none!important}body{background:#fff}.hero{padding:30px 0}.heroArt{min-height:350px}section{padding:35px 0}.card,.stat{box-shadow:none}}
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Main navigation">
+  <div class="wrap navin">
+    <a class="brand" href="#top"><span class="brandmark">🌿</span> PAPER / DIGITAL</a>
+    <div class="links" id="navLinks">
+      <a href="#problem">Problem</a><a href="#lifecycle">Lifecycle</a><a href="#alternatives">Alternatives</a><a href="#action">Take Action</a><a href="#quiz">Quiz</a><a href="#sources">Sources</a>
+    </div>
+    <button class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
+  </div>
+</nav>
+<main id="top">
+<section class="hero">
+  <div class="wrap heroGrid">
+    <div>
+      <span class="eyebrow">🌎 Environment × Technology</span>
+      <h1>Paper consumption<br>in the <span>digital age.</span></h1>
+      <p>Paper is useful — for learning, packaging, records and creativity. But every sheet has a story behind it: resources, water, energy, transport and waste. The smart goal is <b>use less when possible, reuse what you can, and recycle correctly.</b></p>
+      <div class="actions"><a class="btn primary" href="#problem">Explore the impact ↓</a><a class="btn secondary" href="#action">Build your green plan</a></div>
+    </div>
+    <div class="heroArt">
+      <div class="photoFrame"><img loading="eager" src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=85" alt="Notebook and pen representing paper use" onerror="this.style.display='none'"/><div class="photoShade"></div></div>
+      <div class="floating"><strong>23.1%</strong><small>of U.S. municipal solid waste generation was paper and paperboard in 2018.</small></div>
+    </div>
+  </div>
+</section>
+
+<section><div class="wrap reveal"><div class="sectionHead"><div><div class="kicker">The big picture</div><h2>Why one sheet matters</h2></div><p>Paper is renewable and recyclable, but production and disposal still have environmental consequences.</p></div><div class="stats">
+  <div class="stat"><strong>67.4M</strong><span>tons of paper & paperboard generated in U.S. municipal solid waste in 2018.</span></div>
+  <div class="stat"><strong>68.2%</strong><span>of paper & paperboard was recycled in 2018.</span></div>
+  <div class="stat"><strong>17.2M</strong><span>tons of paper & paperboard went to U.S. landfills in 2018.</span></div>
+  <div class="stat"><strong>155M+</strong><span>metric tons CO₂e of estimated GHG reduction linked to paper recycling in EPA's 2018 analysis.</span></div>
+</div></div></section>
+
+<section id="problem"><div class="wrap reveal"><div class="sectionHead"><div><div class="kicker">Environmental impacts</div><h2>The hidden cost of paper</h2></div><p>Think of paper as a chain. The impact starts before the page reaches your desk and continues after disposal.</p></div><div class="split">
+  <div class="card"><div class="impact">
+    <div class="impactItem"><div class="icon">🌲</div><div><b>Forests & fibre</b><span>Virgin paper uses wood fibre. Recycled fibre can reduce demand for new raw material.</span></div></div>
+    <div class="impactItem"><div class="icon">💧</div><div><b>Water & processing</b><span>Pulping, bleaching and papermaking use water and industrial processes.</span></div></div>
+    <div class="impactItem"><div class="icon">⚡</div><div><b>Energy & emissions</b><span>Manufacturing, drying, converting and transport all require energy.</span></div></div>
+    <div class="impactItem"><div class="icon">🗑️</div><div><b>Waste</b><span>Paper that is not reused or recycled can end up in landfills or other waste pathways.</span></div></div>
+  </div></div>
+  <div class="card"><img class="impactPhoto" loading="lazy" src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1100&q=85" alt="Green forest representing natural resources" onerror="this.style.display='none'"><h3>Paper isn't the villain.</h3><p style="color:var(--muted)">The better question is: <b>what job does the paper need to do?</b> A physical copy can be valuable for learning, accessibility or official records. For routine drafts, internal sharing and announcements, digital workflows can often reduce unnecessary printing.</p><div class="callout"><b>Best rule:</b> Reduce first → Reuse → Recycle.</div></div>
+</div></div></section>
+
+<section id="lifecycle"><div class="wrap reveal"><div class="sectionHead"><div><div class="kicker">From tree to next life</div><h2>Follow one sheet</h2></div><p>A simple lifecycle map makes the trade-offs easier to understand.</p></div><div class="lifecycle">
+  <div class="step"><div class="num">1</div><h3>Fibre</h3><p>Wood or recovered paper becomes raw material.</p></div><div class="step"><div class="num">2</div><h3>Pulp</h3><p>Fibre is processed into pulp in industrial systems.</p></div><div class="step"><div class="num">3</div><h3>Paper</h3><p>Pulp is formed, dried, finished and converted.</p></div><div class="step"><div class="num">4</div><h3>Use</h3><p>We write, print, package, read and sometimes discard quickly.</p></div><div class="step"><div class="num">5</div><h3>Next life</h3><p>Reuse and recycling can keep useful fibre in circulation.</p></div>
+</div></div></section>
+
+<section id="alternatives"><div class="wrap reveal"><div class="sectionHead"><div><div class="kicker">Smarter alternatives</div><h2>Digital doesn't mean waste-free</h2></div><p>Digital tools use energy and hardware too. Choose them where they genuinely replace unnecessary paper.</p></div><div class="altGrid">
+  <article class="card alt"><img class="altImg" loading="lazy" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85" alt="Laptop used for digital documents" onerror="this.style.display='none'"><div class="inner"><span class="tag">01 · Documents</span><h3>Digital-first workflow</h3><ul><li>Share PDFs instead of printing drafts.</li><li>Use comments and version history.</li><li>Print only the final or required copy.</li></ul></div></article>
+  <article class="card alt"><img class="altImg" loading="lazy" src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=900&q=85" alt="Student or worker studying with a laptop" onerror="this.style.display='none'"><div class="inner"><span class="tag">02 · Learning</span><h3>Study smarter</h3><ul><li>Annotate digitally for routine reading.</li><li>Print difficult diagrams when useful.</li><li>Use double-sided printing for notes.</li></ul></div></article>
+  <article class="card alt"><img class="altImg" loading="lazy" src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=900&q=85" alt="Cardboard packaging ready for reuse or recycling" onerror="this.style.display='none'"><div class="inner"><span class="tag">03 · Reuse</span><h3>Give paper a second life</h3><ul><li>Reuse one-sided sheets as rough paper.</li><li>Flatten and sort cardboard correctly.</li><li>Follow your local recycling rules.</li></ul></div></article>
+</div></div></section>
+
+<section><div class="wrap reveal"><div class="sectionHead"><div><div class="kicker">Make the choice visible</div><h2>Paper vs. digital</h2></div><p>Neither option wins every situation. Match the medium to the task.</p></div><div class="compare"><table><thead><tr><th>Task</th><th>Better default</th><th>Why</th><th>Green habit</th></tr></thead><tbody>
+<tr><td>Drafting a report</td><td class="good">Digital</td><td>Easy to edit and share.</td><td>Print only the final version if required.</td></tr><tr><td>Official record</td><td class="warn">Depends</td><td>Rules, access and preservation needs matter.</td><td>Follow your institution's policy.</td></tr><tr><td>Brainstorming</td><td class="warn">Depends</td><td>Some people think better on paper.</td><td>Use scrap or reused sheets.</td></tr><tr><td>Internal announcement</td><td class="good">Digital</td><td>Fast distribution and easy updates.</td><td>Use email, LMS or digital noticeboards.</td></tr><tr><td>Packaging</td><td class="good">Reduce + reuse</td><td>Packaging has a physical job.</td><td>Choose right-sized, recyclable packaging.</td></tr>
+</tbody></table></div></div></section>
+
+<section id="action"><div class="wrap reveal"><div class="sectionHead"><div><div class="kicker">7-day challenge</div><h2>Build a paper-smart habit</h2></div><p>Tick the actions you complete. Progress is saved in this browser.</p></div><div class="actionGrid">
+<div class="card"><div class="checklist" id="checks">
+<label class="check"><input type="checkbox"><span><b>Think before printing.</b><br><small>Ask: do I really need a physical copy?</small></span></label><label class="check"><input type="checkbox"><span><b>Print double-sided.</b><br><small>Use duplex printing whenever possible.</small></span></label><label class="check"><input type="checkbox"><span><b>Reuse one-sided paper.</b><br><small>Turn old printouts into rough-work sheets.</small></span></label><label class="check"><input type="checkbox"><span><b>Share digitally.</b><br><small>Send the file instead of a stack of copies.</small></span></label><label class="check"><input type="checkbox"><span><b>Recycle correctly.</b><br><small>Keep paper clean and follow local rules.</small></span></label>
+</div><div class="progress"><div class="bar" id="bar"></div></div><span class="score" id="score">0%</span> <span style="color:var(--muted)">complete</span></div>
+<div class="card calculator"><h3>📄 Printing impact checker</h3><p>Estimate how many pages you could avoid by reducing your monthly printing.</p><div class="formrow"><div class="field"><label for="pages">Pages / month</label><input id="pages" type="number" min="0" value="200"></div><div class="field"><label for="cut">Reduction target (%)</label><input id="cut" type="number" min="0" max="100" value="50"></div></div><div class="result">Pages avoided / month: <strong id="saved">100</strong><br><small>Pages avoided / year: <span id="year">1,200</span></small></div></div>
+</div></div></section>
+
+<section id="quiz"><div class="wrap reveal"><div class="sectionHead"><div><div class="kicker">Quick knowledge check</div><h2>Mini project quiz</h2></div><p>Useful for a classroom presentation, assignment or viva.</p></div><div class="quizGrid">
+<div class="quizCard"><h3>1. What should come before recycling?</h3><select data-answer="reduce"><option value="">Choose…</option><option value="reduce">Reduce / reuse</option><option value="burn">Burn it</option><option value="buy">Buy more paper</option></select><div class="quizResult"></div></div>
+<div class="quizCard"><h3>2. Is every document better on a screen?</h3><select data-answer="no"><option value="">Choose…</option><option value="yes">Yes, always</option><option value="no">No, it depends</option><option value="never">Paper is always better</option></select><div class="quizResult"></div></div>
+<div class="quizCard"><h3>3. Which is a smart printing habit?</h3><select data-answer="duplex"><option value="">Choose…</option><option value="color">Print everything in colour</option><option value="duplex">Print double-sided</option><option value="single">Print one page per sheet only</option></select><div class="quizResult"></div></div>
+</div></div></section>
+
+<section id="sources" class="sources"><div class="wrap reveal"><div class="sectionHead"><div><div class="kicker">Evidence & further reading</div><h2>Sources</h2></div><p>The main statistics are from U.S. EPA data. Waste rules and recycling systems can differ by location.</p></div><div class="sourceGrid">
+<div class="sourceCard"><b>U.S. EPA — Paper & Paperboard Data</b><p class="note">Generation, recycling and landfill figures for 2018.</p><a href="https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/paper-and-paperboard-material-specific-data" target="_blank" rel="noopener">Open EPA source ↗</a></div>
+<div class="sourceCard"><b>U.S. EPA — National Overview</b><p class="note">Paper and paperboard accounted for 23.1% of U.S. MSW generation in 2018.</p><a href="https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/national-overview-facts-and-figures-materials" target="_blank" rel="noopener">Open EPA overview ↗</a></div>
+<div class="sourceCard"><b>U.S. EPA — Recycling Basics</b><p class="note">Explains source reduction, reuse and recycling within waste management.</p><a href="https://www.epa.gov/recycle/recycling-basics-and-benefits" target="_blank" rel="noopener">Open EPA recycling guide ↗</a></div>
+<div class="sourceCard"><b>Images</b><p class="note">The visual photographs are loaded from Unsplash. An internet connection is needed for these remote images.</p><a href="https://unsplash.com/s/photos/paper-recycling" target="_blank" rel="noopener">Browse paper-recycling images ↗</a></div>
+</div><p class="note" style="margin-top:18px">Note: EPA's cited material-specific figures are for 2018, the most recent year in that particular Facts & Figures dataset. The page intentionally labels the year rather than presenting those figures as current-year totals.</p></div></section>
+</main>
+<footer class="footer"><div class="wrap footerIn"><div><b>Paper Consumption in the Digital Age</b><br><small>Environmental Impacts & Alternatives · responsive project webpage</small></div><a class="toTop" href="#top">↑ Back to top</a></div></footer>
+<button class="topFloat" id="topFloat" aria-label="Back to top">↑</button>
+<script>
+(function(){
+  const menu=document.getElementById('menuBtn'),links=document.getElementById('navLinks');
+  menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));document.body.classList.toggle('menu-open',open);menu.textContent=open?'✕ Close':'☰ Menu'});
+  links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');document.body.classList.remove('menu-open');menu.textContent='☰ Menu'}));
+  const reveal=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.08});reveal.forEach(x=>io.observe(x))}else reveal.forEach(x=>x.classList.add('show'));
+  const checks=[...document.querySelectorAll('#checks input')],bar=document.getElementById('bar'),score=document.getElementById('score');
+  function updateChecks(){const done=checks.filter(x=>x.checked).length,p=checks.length?Math.round(done/checks.length*100):0;bar.style.width=p+'%';score.textContent=p+'%';try{localStorage.setItem('paperChecks',JSON.stringify(checks.map(x=>x.checked)))}catch(e){}}
+  try{const saved=JSON.parse(localStorage.getItem('paperChecks')||'[]');saved.forEach((v,i)=>{if(checks[i])checks[i].checked=!!v})}catch(e){} checks.forEach(x=>x.addEventListener('change',updateChecks));updateChecks();
+  const pages=document.getElementById('pages'),cut=document.getElementById('cut'),savedOut=document.getElementById('saved'),year=document.getElementById('year');
+  function calc(){let p=Math.max(0,Number(pages.value)||0),c=Math.min(100,Math.max(0,Number(cut.value)||0)),s=Math.round(p*c/100);savedOut.textContent=s.toLocaleString();year.textContent=(s*12).toLocaleString()}
+  pages.addEventListener('input',calc);cut.addEventListener('input',calc);calc();
+  document.querySelectorAll('.quizCard select').forEach(sel=>sel.addEventListener('change',()=>{const box=sel.nextElementSibling;if(!sel.value){box.textContent='';return}const ok=sel.value===sel.dataset.answer;box.textContent=ok?'✓ Correct!':'✕ Try again.';box.className='quizResult '+(ok?'right':'wrong')}));
+  const top=document.getElementById('topFloat');window.addEventListener('scroll',()=>top.classList.toggle('visible',window.scrollY>500),{passive:true});top.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+})();
+</script>
+</body>
+</html>
